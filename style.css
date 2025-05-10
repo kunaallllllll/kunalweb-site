@@ -1,36 +1,143 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+/* Base Styling */
+* {
   margin: 0;
-  padding: 20px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1, h2, h3 {
-  color: #007acc;
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #ffffff;
+  color: #333;
+  line-height: 1.6;
 }
 
-a {
-  color: #0056b3;
-  text-decoration: none;
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
 }
 
-a:hover {
-  text-decoration: underline;
+/* Navigation */
+header {
+  background: #0d47a1;
+  color: #fff;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-header, footer {
-  background-color: #e0e0e0;
-  padding: 10px;
-  text-align: center;
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
 }
 
 nav a {
-  margin: 0 10px;
-  color: #007acc;
+  color: #fff;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
-main {
-  max-width: 800px;
-  margin: auto;
+nav a:hover {
+  color: #ffca28;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #0d47a1, #1976d2);
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background: #ffca28;
+  color: #0d47a1;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #ffc107;
+}
+
+/* Services */
+.services {
+  padding: 4rem 1rem;
+  background: #f4f6f9;
+}
+
+.services h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #0d47a1;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+
+.card h4 {
+  color: #0d47a1;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  background: #0d47a1;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .nav-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
 }
