@@ -4,12 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kunal Digital Marketing</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
   <header>
-    <div class="container">
+    <div class="container nav-container">
       <h1>Kunal Digital Marketing</h1>
       <nav>
         <a href="index.html">Home</a>
@@ -20,29 +23,53 @@
     </div>
   </header>
 
-  <section class="hero">
+  <section class="hero" data-aos="fade-up">
     <div class="container">
       <h2>Grow Your Business Online</h2>
-      <p>Powerful digital strategies tailored for your success.</p>
-      <a href="contact.html" class="btn">Get Started</a>
+      <p>Strategic marketing services to boost your success.</p>
+      <a href="#services" class="btn">Get Started</a>
     </div>
   </section>
 
-  <section class="features">
+  <section id="services" class="services" data-aos="fade-up">
     <div class="container">
       <h3>Our Services</h3>
-      <ul>
-        <li>SEO Optimization</li>
-        <li>Social Media Marketing</li>
-        <li>Google Ads Campaigns</li>
-        <li>Email Marketing</li>
-        <li>Website Strategy</li>
-      </ul>
+      <div class="cards">
+        <div class="card">
+          <h4>SEO Optimization</h4>
+          <p>Boost your visibility in search results with expert SEO strategies.</p>
+        </div>
+        <div class="card">
+          <h4>Social Media Marketing</h4>
+          <p>Engage audiences and grow your brand across all social platforms.</p>
+        </div>
+        <div class="card">
+          <h4>Google Ads Campaigns</h4>
+          <p>Maximize ROI with highly targeted advertising campaigns.</p>
+        </div>
+        <div class="card">
+          <h4>Email Marketing</h4>
+          <p>Convert leads with engaging and personalized email campaigns.</p>
+        </div>
+        <div class="card">
+          <h4>Website Strategy</h4>
+          <p>Design user-focused websites that drive conversions.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Kunal Digital Marketing Services</p>
+    <div class="container">
+      <p>&copy; 2025 Kunal Digital Marketing Services</p>
+    </div>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+    });
+  </script>
 </body>
 </html>
