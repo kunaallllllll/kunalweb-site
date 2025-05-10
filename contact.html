@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - Kunal Digital Marketing</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
   <header>
-    <div class="container">
+    <div class="container nav-container">
       <h1>Kunal Digital Marketing</h1>
       <nav>
         <a href="index.html">Home</a>
@@ -20,23 +23,36 @@
     </div>
   </header>
 
-  <section class="hero">
+  <section class="hero" data-aos="fade-down">
     <div class="container">
       <h2>Contact Us</h2>
-      <p>We'd love to hear from you! Drop us a message to get started.</p>
+      <p>We’d love to hear from you! Reach out anytime.</p>
     </div>
   </section>
 
-  <section class="features">
+  <section class="services" data-aos="fade-up">
     <div class="container">
-      <p>Email: <a href="mailto:kunaldigital@example.com">kunaldigital@example.com</a></p>
-      <p>Phone: +91 98765 43210</p>
-      <p>Location: India (Online Services Worldwide)</p>
+      <h3>Get In Touch</h3>
+      <form style="max-width: 600px; margin: auto;">
+        <input type="text" placeholder="Your Name" style="width: 100%; padding: 1rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 8px;">
+        <input type="email" placeholder="Your Email" style="width: 100%; padding: 1rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 8px;">
+        <textarea placeholder="Your Message" style="width: 100%; padding: 1rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 8px;"></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <div style="text-align: center; margin-top: 2rem;">
+        <p><strong>Phone:</strong> <a href="tel:8512815455">8512815455</a></p>
+        <p><strong>Email:</strong> <a href="mailto:kunalfreelancingservices@gmail.com">kunalfreelancingservices@gmail.com</a></p>
+      </div>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Kunal Digital Marketing Services</p>
+    <div class="container">
+      <p>&copy; 2025 Kunal Digital Marketing Services</p>
+    </div>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>AOS.init({ duration: 1000 });</script>
 </body>
 </html>
